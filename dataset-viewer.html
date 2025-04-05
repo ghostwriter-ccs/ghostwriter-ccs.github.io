@@ -13909,7 +13909,7 @@
                         <td class="severity-${item.severity}">${item.severity}</td>
                         <td>${item.prompt}</td>
                         <td>
-                            <button class="view-details" data-id="${item.id}">View Details</button>
+                            <button class="view-details" data-id="${item.id}">View Results</button>
                         </td>
                     `;
                     tableBody.appendChild(row);
@@ -14004,8 +14004,8 @@
                 <p><strong>Category:</strong> ${item.category}</p>
                 <p><strong>Basic Statement:</strong> ${item.basic_statement}</p>
                 <p><strong>Severity:</strong> <span class="severity-${item.severity}">${item.severity}</span></p>
-                <p><strong>Prompt:</strong> ${item.prompt}</p>
-                <p><strong>Rewritten Prompt:</strong> ${item.rewritten_prompt}</p>
+                <p><strong>Query:</strong> ${item.prompt}</p>
+                <p><strong>Rewritten Query:</strong> ${item.rewritten_prompt}</p>
                 <p><strong>Explanation:</strong> ${item.explanation}</p>
             `;
             
