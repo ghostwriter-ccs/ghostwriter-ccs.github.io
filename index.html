@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bias Research Project</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #6b8cae;
+            --accent-color: #ff6b6b;
+            --light-bg: #f8f9fa;
+            --dark-bg: #343a40;
+            --text-color: #212529;
+            --light-text: #f8f9fa;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .project-description {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        .warning-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(220, 53, 69, 0.1);
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: left;
+        }
+        
+        .warning-text {
+            color: #e0dcdd;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        .options-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+        
+        .option-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 350px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 30px;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .card-text {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        .footer-text {
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .options-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .option-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Exploiting Chat Assistants to Shape User Perceptions with Persuasive Misinformation</h1>
+            <p class="subtitle">Anonymous Author(s)</p>
+            <div class="warning-box">
+                <p class="warning-text">
+                    <strong>Warning:</strong> This project page contains examples of biased views and false statements that may disturb or offend readers. 
+                </p>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="options-container">
+            <div class="option-card">
+                <div class="card-content">
+                    <h2 class="card-title">Code</h2>
+                    <p class="card-text">
+                        The full source code for our project will be openly available on GitHub after publication.
+                    </p>
+                    <a href="#" class="btn">View Repository</a>
+                </div>
+            </div>
+            
+            <div class="option-card">
+                <div class="card-content">
+                    <h2 class="card-title">Dataset Viewer</h2>
+                    <p class="card-text">
+                        Explore our dataset details and attacked results across different categories.
+                    </p>
+                    <a href="dataset-viewer.html" class="btn">Explore Data</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p class="footer-text">© For academic and educational purposes only. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
